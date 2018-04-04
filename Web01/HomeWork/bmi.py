@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/bmi/<int:weigth>/<int:height>')
 def bmi(weigth, height):
-    bmi = float((weigth/(float(height/100)))**2)
+    bmi = float((weigth/(float(height/10)))**2)
     if bmi < 16:
         return "Severely underweight"
     elif bmi < 18.5:

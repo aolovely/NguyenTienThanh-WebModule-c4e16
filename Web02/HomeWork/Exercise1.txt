@@ -1,0 +1,5 @@
+Are there any duplicate ids in the records?
+If yes, put screenshots of the records which are so in your answer
+If no, why? Guess what information this is field represents and its implication/application
+
+=>There are no duplicate ids in the records. The field_id represents Object ID and use find a specific document .

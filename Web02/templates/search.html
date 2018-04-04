@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Database Intro</title>
+  </head>
+  <body>
+    <h3>search</h3>
+    {% for service in all_services%}
+    {% if service.gender == 1%}
+    <img src="../static/image/female.jpg" alt="anh sai">
+    {% else %}
+    <img src="../static/image/14523193_1079611532159091_3212195191308021271_n.jpg" height="350px" width="350px" alt="">
+    {% endif %}
+    <p>Name: {{service.name}} <br>
+      Yob: {{service.yob}} <br>
+      gender: {{service.gender}} <br>
+    </p>
+    <p> Phone: {{service.phone}}</p>
+    <hr>
+    {% endfor %}
+
+  </body>
+</html>
