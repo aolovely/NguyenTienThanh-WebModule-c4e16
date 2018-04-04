@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Warm Winter</title>
+  </head>
+  <body>
+    <h2>Warm Winter</h2>
+    <b>Bạn là nam: </b><a href="{{ url_for('customer', gender = 0) }}">Click vào em đi!!!</a><br>
+    <b>Bạn là nữ: </b><a href="{{url_for('customer', gender = 1) }}">Chiếm lấy anh đi!!!</a><br>
+    <b>Uncontacted customers: </b><a href="{{url_for('firstmale')}}">10 first male </a>
+  </body>
+</html>

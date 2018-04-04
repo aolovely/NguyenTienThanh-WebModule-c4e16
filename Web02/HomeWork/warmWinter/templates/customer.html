@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <body>
+    <h3> 10 First Male</h3>
+    {% for customer in all_customers %}
+    Name:{{customer.name}} <br>
+    Gender:{{customer.gender}}<br>
+    Email:{{customer.email}}<br>
+    Phone number:{{customer.phone}}<br>
+    Job:{{customer.job}}<br>
+    Company:{{customer.company}}<br>
+    Contacted:{{customer.contacted}}<br>
+    <hr>
+    {% endfor %}
+
+  </body>
+</html>
