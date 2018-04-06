@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Service</title>
+  </head>
+  <body>
+    <h3>Danh Sach Hang</h3>
+    {% for service in allservices %}
+      <img src="{{service.image}}" height="350px" width="350px" alt="no image">
+      <p>
+        <h4>{{service.name}}</h4><br>
+            {{service.yob}}br><br>
+            {{"Nam" if service.gender == 1 else "Nu"}}<br>
+            {{service.height}}<br>
+        <a href="{{ url_for('detail', service_id = service.id) }}">chi tiet</a>
+      </p>
+      <hr>
+    {% endfor %}
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3><center>Thong Tin Chi Tiet</center></h3>
+    <img src="{{service_item.image}}" height="350px" width="350px" alt="no image">
+    <p>
+      <h4>{{service_item.name}}</h4><br>
+      Nam sinh: {{service_item.yob}}<br>
+      Gioi tinh: {{"Nam" if service_item.gender == 1 else "Nu"}}<br>
+      Cao: {{service_item.height}}<br>
+      sdt: {{service_item.phone}}<br>
+      Dia chi: {{service_item.address}}<br>
+      Trang Thai: {{"chua co ny" if service_item.status else "da co ny"}}<br>
+      Mo ta: {{service_item.description}}<br>
+      So do 3 vong:
+      {% for i in service_item.measurements %}
+      {{i}}
+      {{ "-" if not loop.last }}
+      {% endfor %}
+      </p>
+  </body>
+</html>
