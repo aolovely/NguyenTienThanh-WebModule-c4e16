@@ -7,22 +7,42 @@
   <body>
     <h3>Cap Nhat Thong Tin</h3>
     <form method="post">
+      <label>Image</label><br>
+      <input type="text" name="image" value="{{service_update.image}}"><br>
       <label>Ten:</label><br>
       <input type="text" name="name" value="{{service_update.name}}"><br>
       <label>Nam Sinh:</label><br>
       <input type="number" name="yob" value="{{service_update.yob}}"><br>
       <label>gioi tinh:</label><br>
-      <input type="radio" name="gender" value="1" checked> Male
-      <input type="radio" name="gender" value="0"> Female<br>
+      {% if service_update.gender == 0 %}
+      <input type="radio" name="gender" value="0" checked>Male
+      <input type="radio" name="gender" value="1">Female
+      {% else %}
+      <input type="radio" name="gender" value="0">Male
+      <input type="radio" name="gender" value="1" checked>Female
+      {% endif %}
+      <br>
       <label>chieu cao:</label><br>
       <input type="number" name="height" min="142" max="1m80" value="{{service_update.height}}"><br>
       <label>so dien thoai:</label><br>
       <input type="text" name="phone" value="{{service_update.phone}}"><br>
       <label>Dia chi: </label><br>
       <input type="text" name="address" value="{{service_update.address}}"><br>
+      <label>Mo ta:</label><br>
+      <input type="text" name="description" value="{{service_update.description}}"><br>
+      <label>So do 3 vong</label><br>
+      <input type="number" name="measurements1" value="{{service_update.measurements.0}}">
+      <input type="number" name="measurements2" value="{{service_update.measurements.1}}">
+      <input type="number" name="measurements3" value="{{service_update.measurements.2}}">
+      <br>
       <label>trang thai:</label><br>
-      <input type="radio" name="status" value="True" checked>Ranh
-      <input type="radio" name="status" value="" >Ban<br>
+      {% if service_update.status  %}
+      <input type="radio" name="status" value="True" checked>Rảnh
+      <input type="radio" name="status" value="False">Bận
+      {% else %}
+      <input type="radio" name="status" value="True">Rảnh
+      <input type="radio" name="status" value="False" checked>Bận
+      {% endif %}
       <input type="submit">
   </body>
 </html>

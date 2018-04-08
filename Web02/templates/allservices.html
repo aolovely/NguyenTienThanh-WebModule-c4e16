@@ -10,7 +10,7 @@
       <img src="{{service.image}}" height="350px" width="350px" alt="no image">
       <p>
         <h4>{{service.name}}</h4><br>
-            {{service.yob}}br><br>
+            {{service.yob}}<br>
             {{"Nam" if service.gender == 1 else "Nu"}}<br>
             {{service.height}}<br>
         <a href="{{ url_for('detail', service_id = service.id) }}">chi tiet</a>

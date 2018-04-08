@@ -58,12 +58,19 @@ def create():
         return render_template("new-service.html")
     elif request.method == "POST":
         form = request.form
-        name = form["name"]
-        yob = form["yob"]
-        address = form["address"]
-        new_service = Service(name = name,
-                              yob = yob,
-                              address = address)
+        # name = form["name"]
+        # yob = form["yob"]
+        # address = form["address"]
+        new_service = Service(name = form["name"],
+                              yob = form["yob"],
+                              gender = form["gender"],
+                              height = form["height"],
+                              phone = form["phone"],
+                              address = form["address"],
+                              image = form["image"],
+                              description = form["description"],
+                              measurements = [form["measurements1"], form["measurements2"], form["measurements3"]],
+                              status = bool(form["status"]))
         new_service.save()
 
         return redirect(url_for('admin'))
@@ -83,7 +90,7 @@ def services():
 def detail(service_id):
     service_item= Service.objects.with_id(service_id)
     return render_template("detail.html", service_item=service_item)
-    
+
 #exercise6
 @app.route('/update-service/<service_id>', methods=["GET", "POST"])
 def update(service_id):
@@ -101,6 +108,9 @@ def update(service_id):
                                   set__height = form["height"],
                                   set__phone = form["phone"],
                                   set__address = form["address"],
+                                  set__image = form["image"],
+                                  set__description = form["description"],
+                                  set__measurements = [form["measurements1"], form["measurements2"], form["measurements3"]],
                                   set__status = bool(form["status"])
                                   )
             service_update.reload()
