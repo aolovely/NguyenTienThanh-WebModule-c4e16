@@ -96,6 +96,7 @@ def detail(service_id):
         service_item= Service.objects.with_id(service_id)
         return render_template("detail.html", service_item=service_item)
     else:
+        session["service_id"] = service_id
         return redirect(url_for('login'))
 
 
@@ -134,7 +135,7 @@ def sign_in():
                         username=form["username"],
                         password=form["password"])
         new_user.save()
-        return redirect(url_for('index'))
+        return "dang ki tai khoan thanh cong"
 
 @app.route('/login', methods=["GET", "POST"])
 def login():
@@ -149,7 +150,7 @@ def login():
             return render_template("error.html")
         else:
             session["logged_in"] = str(acc["id"]) #luu id-user phuc vu cho exercise3
-            return redirect(url_for('services'))
+            return redirect(url_for('detail', service_id=session["service_id"]))
 
 @app.route('/logout')
 def logout():
