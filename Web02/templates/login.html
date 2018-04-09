@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3>Dang Nhap</h3>
+    <form method="post">
+      <label>Ten Dang Nhap:</label>
+      <input type="text" name="username" value="">
+      <label>Mat Khau:</label>
+      <input type="password" name="password" value="">
+      <input type="submit" name="">
+    </form>
+    <h4>Dang Ki Tai Khoan:</h4>
+    <a href="{{ url_for('sign_in') }}">dang ki</a><br>
+    <h4>Tro ve trang chu</h4>
+    <a href="{{ url_for('index') }}">click</a>
+  </body>
+</html>

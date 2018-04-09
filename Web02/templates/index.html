@@ -6,6 +6,10 @@
   </head>
   <body>
     <h3>Muad Đông Không Lạnh </h3>
+    <p>
+      <a href="{{url_for('login')}}">dang nhap</a><br>
+      <a href="{{url_for('logout')}}">dang xuat</a>
+    </p>
     <b>Ban la nam: </b><a href="{{url_for('search', gender=0)}}">click vao em di</a>
     <br>
     <b>Ban la nu: </b><a href="{{url_for('search', gender=1)}}">click vao anh di</a>

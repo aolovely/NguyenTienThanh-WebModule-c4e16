@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CMS</title>
+  </head>
+  <body>
+    <h3>CMS APP</h3>
+    {% for video in videos %}
+    <img src="{{video.thumbnail}}" width="300px" height="250px" alt=""><br>
+    <h4>Ten: {{video.title}}</h4><br>
+    <b>Views: {{video.views}}</b><button><a href="{{ url_for('detail', youtubeid=video.youtubeid) }}">click de xem</a></button><br><br>
+    <hr>
+    {% endfor %}
+  </body>
+</html>

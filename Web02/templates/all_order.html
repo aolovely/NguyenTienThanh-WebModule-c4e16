@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>All Order</title>
+  </head>
+  <body>
+    <h3>Danh Sach Yeu Cau</h3>
+    <table border="1px">
+      <thead>
+        <th>STT</th>
+        <th>Doi Tac</th>
+        <th>Ngoi Dung</th>
+        <th>Thoi Gian Yeu Cau</th>
+        <th></th>        
+      </thead>
+
+      <tbody>
+        {% for order in all_order %}
+          <tr>
+          <td>{{loop.index}}</td>
+          <td>{{order.service.name}}</td>
+          <td>{{order.user.username}}</td>
+          <td>{{order.time}}</td>
+          <td> <a href="{{url_for('accept', order_id=order.id)}}">Phe Duyet</a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -20,7 +20,8 @@
       {% for i in service_item.measurements %}
       {{i}}
       {{ "-" if not loop.last }}
-      {% endfor %}
+      {% endfor %}<br>
+      <a href="{{url_for('order_service', service_id=service_item.id)}}"> Yêu cầu dịch vụ </a>
       </p>
   </body>
 </html>
