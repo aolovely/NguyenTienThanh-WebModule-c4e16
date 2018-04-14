@@ -1,0 +1,85 @@
+h2{
+  color: red;
+}
+h3{
+  color: green;
+}
+#second-heading{
+  color: blue;
+  font-family: 'Roboto Slab', serif;
+
+}
+.text-right{
+  text-align: right;
+}
+.bg-lightblue{
+  background-color: #db0a57;
+}
+.h-500px{
+  height: 500px;
+}
+#background{
+  background-image: url("http://www.artoftheplayboy.com/wp-content/uploads/2013/07/7041561-lovely-girl-india-eisley-actress.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.w-300px{
+  width: 300px;
+}
+.w-20{
+  width: 20%;
+}
+.h-100px{
+  height: 100px;
+}
+.bg-green{
+  background-color:  #dbaa57;
+}
+.d-inline-block{
+  display: inline-block;
+}
+.h-30px{
+  height: 30px;
+}
+#parent{
+     padding: 25px 50px 75px 100px;
+}
+#center-element{
+  margin: 20px 10px 20px 10px;
+  border: 1px solid red;
+}
+.mr-60{
+  margin: 0px 59% 0px 0px;
+}
+.center{
+  padding: 0px 25% 0px 0px;
+}
+.w-100{
+  width: 70%;
+}.h-50{
+  height: 50%;
+}
+.bg-red{
+  background-color: red;
+}
+.bg-yellow{
+  background-color: yellow;
+}
+.w-100px{
+  width: 100px;
+}
+.h-100px{
+  height: 100px;
+}
+.m-10{
+  margin: 10px 10px 10px 10px;
+}
+#flex-box{
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  height: 400px;
+  /* align-items: flex-end; */
+  align-content: space-between;
+}
