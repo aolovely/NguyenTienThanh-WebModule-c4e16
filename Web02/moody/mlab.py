@@ -1,10 +1,10 @@
 import mongoengine
 
-#mongodb://<dbuser>:<dbpassword>@ds249415.mlab.com:49415/moody-app
 
-host = "ds249415.mlab.com"
-port = 49415
-db_name = "moody-app"
+
+host = "ds153869.mlab.com"
+port = 53869
+db_name = "moodyapp"
 user_name = "admin"
 password = "admin"
 

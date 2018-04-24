@@ -27,11 +27,11 @@
           </h1>
 
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">Hạnh phúc</a>
-            <a class="dropdown-item" href="#">Mệt mỏi</a>
-            <a class="dropdown-item" href="#">Bình thường</a>
-            <a class="dropdown-item" href="#">Buồn</a>
-            <a class="dropdown-item" href="#">Điên</a>
+            <a class="dropdown-item" href="{{ url_for('recommend', happy=1) }}">Hạnh phúc</a>
+            <a class="dropdown-item" href="{{ url_for('recommend', happy=2) }}">Mệt mỏi</a>
+            <a class="dropdown-item" href="{{ url_for('recommend', happy=3) }}">Bình thường</a>
+            <a class="dropdown-item" href="{{ url_for('recommend', happy=4) }}">Buồn</a>
+            <a class="dropdown-item" href="{{ url_for('recommend', happy=5) }}">Điên</a>
           </div>
         </div>
       </div>
