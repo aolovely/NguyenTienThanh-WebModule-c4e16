@@ -1,0 +1,80 @@
+.navbar {
+  background-color: transparent;
+  background: transparent;
+  background-image: none;
+}
+
+.font-roboto-900 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  letter-spacing: .05rem;
+}
+
+.font-roboto-700 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: .05rem;
+}
+
+.font-roboto-400 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: .05rem;
+}
+
+.font-14px {
+  font-size: 14px;
+}
+
+.font-13px {
+  font-size: 13px;
+}
+
+.font-20px {
+  font-size: 20px;
+}
+
+.font-25px {
+  font-size: 25px;
+}
+
+.width-200px {
+  width: 200px;
+}
+
+.text-grey {
+  color: grey;
+}
+
+img {
+    opacity: 0.75;
+    filter: alpha(opacity=75); /* For IE8 and earlier */
+    filter: drop-shadow(0px 8px 20px lightgrey);
+}
+
+.border-bot-grey {
+  border-bottom: 1px solid lightgrey;
+}
+
+.color-bfbdbd {
+  color: #bfbdbd;
+}
+
+.tembus{
+	background-color: transparent !important;
+}
+
+
+.bg-gradient {
+  background: #36D1DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.borderless td {
+  border: none;
+}
+
+#heart {
+  color: red;
+}

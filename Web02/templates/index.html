@@ -2,18 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Muad Đông Không Lạnh </title>
+    <title>Mua Đông Không Lạnh </title>
+    {% include "meta-data.html" %}
   </head>
   <body>
-    <h3>Muad Đông Không Lạnh </h3>
-    <p>
-      <a href="{{url_for('login')}}">dang nhap</a><br>
-      <a href="{{url_for('logout')}}">dang xuat</a>
-    </p>
-    <b>Ban la nam: </b><a href="{{url_for('search', gender=0)}}">click vao em di</a>
-    <br>
-    <b>Ban la nu: </b><a href="{{url_for('search', gender=1)}}">click vao anh di</a>
-    <br>
-    <b>xem toan bo khach hang: </b><a href="{{ url_for('services') }}">click vao de xem</a>
+    {% include "homepage/navigation.html"%}
+    {% include "homepage/carousel.html" %}
+    {% include "homepage/misson.html"%}
+    {% include "homepage/mission2.html"%}
   </body>
 </html>

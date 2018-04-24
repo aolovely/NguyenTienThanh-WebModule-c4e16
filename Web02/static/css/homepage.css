@@ -1,0 +1,60 @@
+.font-lobster{
+  font-family: 'Lobster', cursive;
+}
+.mb-250px{
+  margin-bottom: 250px;
+}
+.h-650px{
+  height: 650px;
+}
+.h-500px{
+  height: 500px;
+}
+.h-450px{
+  height: 450px;
+}
+.h-200px{
+  height: 200px;
+}
+.h-100px{
+  height: 100px;
+}
+.h-75{
+  height: 75%;
+}
+.w-90{
+  width: 90%
+}
+.w-35{
+  width: 35%;
+}
+.w-33{
+  width: 33%;
+}
+.mt-50px{
+  margin-top: 50px;
+}
+.ml-50px{
+  margin-left: 50px;
+}
+.mr-50px{
+  margin-right: 50px;
+}
+.wh-auto{
+  width: inherit;
+  height: inherit;
+  border: 2px solid;
+  border-color: white;
+}
+.bg-male{
+  background: url(../../static/image/male.jpg) no-repeat;
+  background-size: cover;
+}
+.bg-female{
+  background: url(../../static/image/female.jpg) no-repeat;
+  background-size: cover;
+}
+.bg-night{
+  background: url("../../static/image/night.jpg") no-repeat;
+  background-size: cover;
+}
